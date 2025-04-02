@@ -12,10 +12,9 @@ function exercise_10() {
   */
 
   // CODE IN THE OPEN LINES BELOW
-
-  let preciseNumber = 3.14159;
-  let roundedNumber = preciseNumber.toFixed(2);
-  console.log(roundedNumber); // "3.14"
+  const decimalNumber = 3.14159; // A number with 5 decimal places
+  const roundedNumber = decimalNumber.toFixed(2);
+  console.log(roundedNumber); // Output: "3.14""
 
   // CODE IN THE OPEN LINES ABOVE
 }

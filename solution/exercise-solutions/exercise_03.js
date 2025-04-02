@@ -14,11 +14,10 @@ function exercise_03() {
   */
 
   // CODE IN THE OPEN LINES BELOW
-
-  let boolFromZero = Boolean(0);
-  let boolFromOne = Boolean(1);
-  console.log(boolFromZero); // false
-  console.log(boolFromOne); // true
+  const booleanZero = Boolean(0); // Converts number 0 to Boolean
+  const booleanOne = Boolean(1);   // Converts number 1 to Boolean
+  console.log(booleanZero); // Output: false
+  console.log(booleanOne);  // Output: true
 
   // CODE IN THE OPEN LINES ABOVE
 }

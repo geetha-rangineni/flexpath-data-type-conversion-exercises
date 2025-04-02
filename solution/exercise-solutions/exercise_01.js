@@ -17,16 +17,18 @@ function exercise_01() {
 
   // CODE IN THE OPEN LINES BELOW
 
-  let stringType = "Hello, World!";
-  let numberType = 42;
-  let booleanType = true;
-  let objectType = { key: "value" };
-  let undefinedType;
-  console.log(typeof stringType); // "string"
-  console.log(typeof numberType); // "number"
-  console.log(typeof booleanType); // "boolean"
-  console.log(typeof objectType); // "object"
-  console.log(typeof undefinedType); // "undefined"
+  const myString = "Hello, World!"; // String
+  const myNumber = 27;               // Number
+  const myBoolean = true;            // Boolean
+  const myObject = { key: "value" }; // Object
+  let unassignedVariable;
+  console.log(typeof myString);          
+  console.log(typeof myNumber);          
+  console.log(typeof myBoolean);         
+  console.log(typeof myObject);          
+  console.log(typeof unassignedVariable); 
+}
+
 
   // CODE IN THE OPEN LINES ABOVE
-}
+

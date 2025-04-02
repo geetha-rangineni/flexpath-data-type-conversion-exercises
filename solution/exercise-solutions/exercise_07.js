@@ -11,9 +11,10 @@ function exercise_07() {
 
   // CODE IN THE OPEN LINES BELOW
 
-  let person = { name: "Bob", age: 25, isEmployed: true };
-  let jsonString = JSON.stringify(person);
-  console.log(jsonString);
+  const myObject = {name: "Alice",age: 36, occupation: "Engineer"}; 
+  const jsonString = JSON.stringify(myObject);
+  console.log(jsonString); // Output: '{"name":"Alice","age":36,"occupation":"Engineer"}'
+
 
   // CODE IN THE OPEN LINES ABOVE
 }

@@ -13,10 +13,15 @@ function exercise_09() {
 
   // CODE IN THE OPEN LINES BELOW
 
-  let decimalNumber = 5.72354;
-  console.log(Math.round(decimalNumber)); // 6
-  console.log(Math.ceil(decimalNumber)); // 6
-  console.log(Math.floor(decimalNumber)); // 5
+  const decimalNumber = 3.14159; 
+  const rounded = Math.round(decimalNumber);
+  const ceiled = Math.ceil(decimalNumber);
+  const floored = Math.floor(decimalNumber);
+  
+  console.log("Original number:", decimalNumber); 
+  console.log("Rounded:", rounded);                
+  console.log("Ceiled:", ceiled);                  
+  console.log("Floored:", floored);    
 
   // CODE IN THE OPEN LINES ABOVE
 }

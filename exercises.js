@@ -40,10 +40,20 @@ function exercise_01() {
 
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code in this space";
-
-  // CODE IN THE OPEN LINES ABOVE
+  const myString = "Hello, World!"; // String
+  const myNumber = 27;               // Number
+  const myBoolean = true;            // Boolean
+  const myObject = { key: "value" }; // Object
+  let unassignedVariable;
+  console.log(typeof myString);          // Output: string
+  console.log(typeof myNumber);          // Output: number
+  console.log(typeof myBoolean);         
+  console.log(typeof myObject);          
+  console.log(typeof unassignedVariable); 
 }
+exercise_01();
+  // CODE IN THE OPEN LINES ABOVE
+
 
 function exercise_02() {
   /* 
@@ -60,10 +70,15 @@ function exercise_02() {
 
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code in this space";
+  let num = 567;
+  let numAsString = String(num);
+  console.log(numAsString); // "567"
+  console.log(typeof numAsString); // "string"
+
 
   // CODE IN THE OPEN LINES ABOVE
 }
+exercise_02();
 
 function exercise_03() {
   /* 
@@ -82,10 +97,15 @@ function exercise_03() {
 
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code in this space";
+  
+const booleanZero = Boolean(0); // Converts number 0 to Boolean
+const booleanOne = Boolean(1);   // Converts number 1 to Boolean
+console.log(booleanZero); // Output: false
+console.log(booleanOne);  // Output: true
 
   // CODE IN THE OPEN LINES ABOVE
 }
+exercise_03();
 
 function exercise_04() {
   /* 
@@ -101,10 +121,16 @@ function exercise_04() {
 
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code in this space";
+  
+const nonNumericString = "Hello, World!";
+const convertedNumber = Number(nonNumericString); // Attempt to convert to Number
+const isNotANumber = isNaN(convertedNumber);
+console.log(convertedNumber); // Output: NaN
+console.log(isNotANumber);     // Output: true
 
   // CODE IN THE OPEN LINES ABOVE
 }
+exercise_04();
 
 function exercise_05() {
   /* 
@@ -122,10 +148,14 @@ function exercise_05() {
 
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code in this space";
+  
+const myAge = 27; // Replace 27 with your actual age
+const message = `I am ${myAge} years old.`;
+console.log(message); // Output: "I am 27 years old."
 
   // CODE IN THE OPEN LINES ABOVE
 }
+exercise_05();
 
 function exercise_06() {
   // DONT edit the code below
@@ -147,12 +177,16 @@ function exercise_06() {
   */
 
   // CODE IN THE OPEN LINES BELOW
+  //+ operator
+  const concatenatedString = name + " has " + number + " apples.";
+  console.log(concatenatedString); // Output: "Alice has 5 apples."
 
-  const placeholder = "Delete this line and code in this space";
-
+  //using a template literal
+  const templateString = `${name} has ${number} apples.`;
+  console.log(templateString); // Output: "Alice has 5 apples."
   // CODE IN THE OPEN LINES ABOVE
 }
-
+exercise_06();
 function exercise_07() {
   /* 
    
@@ -166,10 +200,18 @@ function exercise_07() {
 
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code in this space";
+  const myObject = {
+    name: "Alice",
+    age: 36,
+    occupation: "Engineer"
+}; 
+const jsonString = JSON.stringify(myObject);
+console.log(jsonString); // Output: '{"name":"Alice","age":36,"occupation":"Engineer"}'
 
   // CODE IN THE OPEN LINES ABOVE
 }
+  exercise_07();
+
 
 function exercise_08() {
   // DONT edit the code below
@@ -189,10 +231,15 @@ function exercise_08() {
 
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code in this space";
+  // Parse the JSON string into an object
+  const parsedObject = JSON.parse(jsonStringToParse);
+
+  // Print one of its properties 
+  console.log(parsedObject.name); // Output: "Charlie"
+}
 
   // CODE IN THE OPEN LINES ABOVE
-}
+  exercise_08();
 
 function exercise_09() {
   /* 
@@ -209,10 +256,19 @@ function exercise_09() {
 
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code in this space";
+  // Step 1: Create a decimal number variable
+const decimalNumber = 3.14159; 
+const rounded = Math.round(decimalNumber);
+const ceiled = Math.ceil(decimalNumber);
+const floored = Math.floor(decimalNumber);
 
+console.log("Original number:", decimalNumber); 
+console.log("Rounded:", rounded);                
+console.log("Ceiled:", ceiled);                  
+console.log("Floored:", floored);                
   // CODE IN THE OPEN LINES ABOVE
 }
+exercise_09();
 
 function exercise_10() {
   /* 
@@ -229,10 +285,12 @@ function exercise_10() {
 
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code in this space";
-
+  const decimalNumber = 3.14159; // A number with 5 decimal places
+  const roundedNumber = decimalNumber.toFixed(2);
+  console.log(roundedNumber); // Output: "3.14"
   // CODE IN THE OPEN LINES ABOVE
 }
+exercise_10();
 
 function exercise_11() {
   /* 
@@ -251,10 +309,16 @@ function exercise_11() {
 
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code in this space";
+   // Step 1: Create a variable to hold a large number with 2 decimal points
+   let largeNumber = 1234567.89;
 
-  // CODE IN THE OPEN LINES ABOVE
-}
+   // Step 2: Create a new Intl.NumberFormat object for the US locale
+   let formatter = new Intl.NumberFormat('en-US', {minimumFractionDigits: 2,maximumFractionDigits: 2});
+   let formattedNumber = formatter.format(largeNumber);
+  console.log(formattedNumber);
+ }
+ // CODE IN THE OPEN LINES ABOVE
+ exercise_11();
 
 function exercise_12() {
   /* 
@@ -276,11 +340,17 @@ function exercise_12() {
 
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code in this space";
+  let salary = 50000; // Step 1: Create a variable named `salary` that holds a 5 digit integer
+  let usdFormatter = new Intl.NumberFormat("en-US", { // Step 2: Create a new Intl.NumberFormat object for the US locale
+  style: "currency",
+  currency: "USD",
+   });
+  console.log(usdFormatter.format(salary)); // Step 3: Log the formatted salary to the console
+ 
 
   // CODE IN THE OPEN LINES ABOVE
 }
-
+exercise_12();
 function exercise_13() {
   /* 
    
@@ -300,12 +370,16 @@ function exercise_13() {
   */
 
   // CODE IN THE OPEN LINES BELOW
-
-  const placeholder = "Delete this line and code in this space";
+  let salary = 110000;
+  let jpnFormatter = new Intl.NumberFormat("ja-JP", {
+    style: "currency",
+    currency: "JPY",
+  });
+  console.log(jpnFormatter.format(salary)); // "¥50,000"
 
   // CODE IN THE OPEN LINES ABOVE
 }
-
+exercise_13();
 function exercise_14() {
   /* 
    
@@ -321,11 +395,13 @@ function exercise_14() {
 
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code in this space";
+  let currentDate = new Date(); // Create a new Date object for the current date and time
+  console.log(currentDate.toDateString()); // Log the date in a readable format
+  console.log(currentDate.toTimeString()); // Log the time in a readable format space";
 
   // CODE IN THE OPEN LINES ABOVE
 }
-
+exercise_14();
 function exercise_15() {
   /* 
    
@@ -343,10 +419,19 @@ function exercise_15() {
 
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code in this space";
+   
+    
+    let currentDate = new Date();
+    let usFormattedDate = currentDate.toLocaleDateString('en-US');
+    console.log(usFormattedDate); // Example output: "4/2/2025"
+    let gbFormattedDate = currentDate.toLocaleDateString('en-GB');
+    console.log(gbFormattedDate); // Example output: "02/04/2025"
+  
+  
 
   // CODE IN THE OPEN LINES ABOVE
 }
+exercise_15();
 
 function exercise_16() {
   /* 
@@ -361,10 +446,20 @@ function exercise_16() {
 
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code in this space";
+  let invalidJSON = "{ name: 'John', age: 30 }"; // Missing double quotes around keys
+  try {
+    // Attempt to parse the invalid JSON
+    let parsedData = JSON.parse(invalidJSON);
+    console.log(parsedData); // This line will not execute
+  } catch (error) {
+    
+    console.error("Error parsing JSON:", error.message);
+  }
+
 
   // CODE IN THE OPEN LINES ABOVE
 }
+exercise_16();
 
 function exercise_17() {
   /* 
@@ -378,10 +473,14 @@ function exercise_17() {
 
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code in this space";
-
+    
+    let boolValue = true;
+    let stringValue = String(boolValue);
+     console.log(stringValue); // Output: "true"
+  
   // CODE IN THE OPEN LINES ABOVE
 }
+exercise_17();
 
 function exercise_18() {
   /* 
@@ -414,11 +513,30 @@ function exercise_18() {
 
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code in this space";
+  let largeNumber = 123456789.12;
+  let usFormatter = new Intl.NumberFormat("en-US", {
+    style: "currency",
+    currency: "USD",
+  });  // US currency format
+
+  let ruFormatter = new Intl.NumberFormat("ru-RU", {
+    style: "currency",
+    currency: "RUB",
+  }); // Russian currency format
+
+  let jpFormatter = new Intl.NumberFormat("ja-JP", {
+    style: "currency",
+    currency: "JPY",
+  }); // Japanese currency format
+
+  
+console.log(usFormatter.format(largeNumber)); 
+  console.log(ruFormatter.format(largeNumber)); 
+  console.log(jpFormatter.format(largeNumber)); 
 
   // CODE IN THE OPEN LINES ABOVE
 }
-
+exercise_18();
 function exercise_19() {
   /* 
    
@@ -436,7 +554,15 @@ function exercise_19() {
 
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code in this space";
+   
+    let today = new Date();
+    let futureDate = new Date("2025-12-31");
+    let timeDifference = futureDate - today; // Difference in milliseconds
+    let daysDifference = timeDifference / (1000 * 60 * 60 * 24); // Convert ms to days
+    console.log(`The difference between today and the future date is approximately ${Math.floor(daysDifference)} days.`);
+  
 
   // CODE IN THE OPEN LINES ABOVE
+
 }
+exercise_19();

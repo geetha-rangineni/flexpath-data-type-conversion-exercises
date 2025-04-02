@@ -16,8 +16,10 @@ function exercise_08() {
 
   // CODE IN THE OPEN LINES BELOW
 
-  let parsedObject = JSON.parse(jsonStringToParse);
-  console.log(parsedObject.name); // "Charlie"
+ // Parse the JSON string into an object
+ const parsedObject = JSON.parse(jsonStringToParse);
 
+ // Print one of its properties 
+ console.log(parsedObject.name); // Output: "Charlie"
   // CODE IN THE OPEN LINES ABOVE
 }

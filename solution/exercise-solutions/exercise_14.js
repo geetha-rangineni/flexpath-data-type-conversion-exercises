@@ -19,3 +19,4 @@ function exercise_14() {
 
   // CODE IN THE OPEN LINES ABOVE
 }
+exercise_14();
